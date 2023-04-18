@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screen.CountryFragment"
+    android:background="@drawable/splash_act">
+
+    <Button
+        android:id="@+id/buttonStatic"
+        android:layout_width="350dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/color_header"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnNews"
+        app:layout_constraintStart_toStartOf="@+id/btnNews"
+        app:layout_constraintTop_toBottomOf="@+id/btnNews"
+        android:text="@string/statistic"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/buttonSetting"
+        android:layout_width="350dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/color_header"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStatic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonStatic"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStatic"
+        app:layout_constraintVertical_bias="0.0"
+        android:text="@string/settings"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/btnNews"
+        android:layout_width="350dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/color_header"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTable"
+        app:layout_constraintStart_toStartOf="@+id/buttonTable"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTable"
+        android:text="@string/news"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/betmatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTable"
+        android:layout_width="350dp"
+        android:layout_height="87dp"
+        android:backgroundTint="@color/color_header"
+        android:text="@string/table"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
