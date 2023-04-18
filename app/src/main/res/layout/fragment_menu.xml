@@ -12,7 +12,7 @@
 
 
     <Button
-        android:id="@+id/buttonStatic"
+        android:id="@+id/btnStatistic"
         android:layout_width="350dp"
         android:layout_height="87dp"
         android:layout_marginTop="8dp"
@@ -26,17 +26,17 @@
         android:textStyle="bold|italic"/>
 
     <Button
-        android:id="@+id/buttonSetting"
+        android:id="@+id/btnSetting"
         android:layout_width="350dp"
         android:layout_height="87dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/color_header"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/buttonStatic"
+        app:layout_constraintEnd_toEndOf="@+id/btnStatistic"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/buttonStatic"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStatic"
+        app:layout_constraintStart_toStartOf="@+id/btnStatistic"
+        app:layout_constraintTop_toBottomOf="@+id/btnStatistic"
         app:layout_constraintVertical_bias="0.0"
         android:text="@string/settings"
         android:textSize="40sp"
@@ -49,9 +49,9 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/color_header"
         app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/buttonTable"
-        app:layout_constraintStart_toStartOf="@+id/buttonTable"
-        app:layout_constraintTop_toBottomOf="@+id/buttonTable"
+        app:layout_constraintEnd_toEndOf="@+id/btnTable"
+        app:layout_constraintStart_toStartOf="@+id/btnTable"
+        app:layout_constraintTop_toBottomOf="@+id/btnTable"
         android:text="@string/news"
         android:textSize="50sp"
         android:textStyle="bold|italic"/>
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonTable"
+        android:id="@+id/btnTable"
         android:layout_width="350dp"
         android:layout_height="87dp"
         android:backgroundTint="@color/color_header"
@@ -81,6 +81,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.32999998" />
+        app:layout_constraintVertical_bias="0.32999998"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

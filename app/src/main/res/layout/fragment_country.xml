@@ -8,47 +8,48 @@
     android:background="@drawable/splash_act">
 
     <Button
-        android:id="@+id/buttonStatic"
+        android:id="@+id/btnGerman"
         android:layout_width="350dp"
         android:layout_height="87dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/color_header"
-        app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/btnNews"
-        app:layout_constraintStart_toStartOf="@+id/btnNews"
-        app:layout_constraintTop_toBottomOf="@+id/btnNews"
-        android:text="@string/statistic"
+        android:text="@string/german"
         android:textSize="40sp"
-        android:textStyle="bold|italic"/>
+        android:textStyle="bold|italic"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnEngland"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnEngland"
+        app:layout_constraintTop_toBottomOf="@+id/btnEngland" />
 
     <Button
-        android:id="@+id/buttonSetting"
+        android:id="@+id/btnSpanish"
         android:layout_width="350dp"
         android:layout_height="87dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/color_header"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/buttonStatic"
+        app:layout_constraintEnd_toEndOf="@+id/btnGerman"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/buttonStatic"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStatic"
+        app:layout_constraintStart_toStartOf="@+id/btnGerman"
+        app:layout_constraintTop_toBottomOf="@+id/btnGerman"
         app:layout_constraintVertical_bias="0.0"
-        android:text="@string/settings"
+        android:text="@string/spanish"
         android:textSize="40sp"
         android:textStyle="bold|italic"/>
 
     <Button
-        android:id="@+id/btnNews"
+        android:id="@+id/btnEngland"
         android:layout_width="350dp"
         android:layout_height="87dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/color_header"
         app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/buttonTable"
-        app:layout_constraintStart_toStartOf="@+id/buttonTable"
-        app:layout_constraintTop_toBottomOf="@+id/buttonTable"
-        android:text="@string/news"
+        app:layout_constraintEnd_toEndOf="@+id/btnRussia"
+        app:layout_constraintStart_toStartOf="@+id/btnRussia"
+        app:layout_constraintTop_toBottomOf="@+id/btnRussia"
+        android:text="@string/england"
         android:textSize="50sp"
         android:textStyle="bold|italic"/>
 
@@ -64,11 +65,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonTable"
+        android:id="@+id/btnRussia"
         android:layout_width="350dp"
         android:layout_height="87dp"
         android:backgroundTint="@color/color_header"
-        android:text="@string/table"
+        android:text="@string/russia"
         android:textSize="50sp"
         android:textStyle="bold|italic"
         app:cornerRadius="20dp"

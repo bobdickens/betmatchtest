@@ -28,6 +28,10 @@ class MenuFragment : Fragment() {
         binding.btnNews.setOnClickListener {
             MAIN.navController.navigate(R.id.action_firstFragment_to_secondFragment)
         }
+
+        binding.btnTable.setOnClickListener{
+            MAIN.navController.navigate(R.id.action_firstFragment_to_countryFragment)
+        }
     }
 
 

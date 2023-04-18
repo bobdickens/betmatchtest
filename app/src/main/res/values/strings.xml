@@ -6,4 +6,9 @@
     <string name="news">Новости</string>
     <string name="statistic">Статистика</string>
     <string name="settings">Настройки</string>
+
+    <string name="russia">Россия</string>
+    <string name="england">Англия</string>
+    <string name="german">Германия</string>
+    <string name="spanish">Испания</string>
 </resources>
