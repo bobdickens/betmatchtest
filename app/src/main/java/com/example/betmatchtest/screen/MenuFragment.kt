@@ -25,10 +25,10 @@ class MenuFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.btnNews.setOnClickListener {
             MAIN.navController.navigate(R.id.action_firstFragment_to_secondFragment)
         }
-
         binding.btnTable.setOnClickListener{
             MAIN.navController.navigate(R.id.action_firstFragment_to_countryFragment)
         }

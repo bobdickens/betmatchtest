@@ -34,5 +34,20 @@
         <action
             android:id="@+id/action_countryFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_countryFragment_to_russiaFragment"
+            app:destination="@id/russiaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/russiaFragment"
+        android:name="com.example.betmatchtest.screen.RussiaFragment"
+        android:label="fragment_russia"
+        tools:layout="@layout/fragment_russia" >
+        <action
+            android:id="@+id/action_russiaFragment_to_countryFragment"
+            app:destination="@id/countryFragment" />
+        <argument
+            android:name="MyArg"
+            android:defaultValue="0" />
     </fragment>
 </navigation>
