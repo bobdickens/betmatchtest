@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_act"
+    android:padding="16dp"
+    tools:context=".screen.SettingFragment">
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Настройки"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/tvPing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Уведомления"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettings" />
+
+    <TextView
+        android:id="@+id/tvBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Черная тема"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/tvPing"
+        app:layout_constraintTop_toBottomOf="@+id/tvPing" />
+
+    <TextView
+        android:id="@+id/tvWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Обои"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/tvBlack"
+        app:layout_constraintTop_toBottomOf="@+id/tvBlack" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="55dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="44dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPing"
+        app:layout_constraintStart_toEndOf="@+id/tvPing"
+        app:layout_constraintTop_toTopOf="@+id/tvPing"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="68dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:scaleX="2"
+        android:scaleY="2"
+
+        app:layout_constraintBottom_toBottomOf="@+id/tvBlack"
+        app:layout_constraintStart_toEndOf="@+id/tvBlack"
+        app:layout_constraintTop_toTopOf="@+id/tvBlack"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="96dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/color_header"
+        android:text="Change"
+        android:textSize="14sp"
+
+
+        android:textStyle="bold|italic"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvWindow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvWindow" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
