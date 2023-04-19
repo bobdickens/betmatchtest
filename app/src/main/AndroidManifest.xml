@@ -8,14 +8,20 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/bool"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.BetMatchTest"
-        tools:targetApi="31"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
         <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.BetMatchTest.NoActionBar" />
+
+        <activity
+            android:name=".screen.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
