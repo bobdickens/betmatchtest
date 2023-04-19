@@ -32,6 +32,12 @@ class MenuFragment : Fragment() {
         binding.btnTable.setOnClickListener{
             MAIN.navController.navigate(R.id.action_firstFragment_to_countryFragment)
         }
+        binding.btnStatistic.setOnClickListener{
+            MAIN.navController.navigate(R.id.action_firstFragment_to_statisicFragment)
+        }
+        binding.btnSetting.setOnClickListener{
+            MAIN.navController.navigate(R.id.action_firstFragment_to_settingFragment)
+        }
     }
 
 

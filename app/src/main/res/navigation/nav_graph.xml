@@ -16,6 +16,12 @@
         <action
             android:id="@+id/action_firstFragment_to_countryFragment"
             app:destination="@id/countryFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_statisicFragment"
+            app:destination="@id/statisicFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -49,5 +55,23 @@
         <argument
             android:name="MyArg"
             android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisicFragment"
+        android:name="com.example.betmatchtest.screen.StatisicFragment"
+        android:label="fragment_statisic"
+        tools:layout="@layout/fragment_statisic" >
+        <action
+            android:id="@+id/action_statisicFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.betmatchtest.screen.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
     </fragment>
 </navigation>
